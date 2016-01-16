@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-material-icons/angular-material-icons.js"></script>
+
+    <!--Slider-->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <script src="sliderengine/initslider-1.js"></script>
+
+    <script src="applications.js"></script>
+</head>
+<body ng-app="applications" ng-controller="applicationController">
+<header class="header">
+    <div layout="row">
+        <div flex="5"></div>
+        <div layout="row">
+            <span layout="row" layout-align="start center" class="iconColor">
+                <ng-md-icon icon="phone" size="30"></ng-md-icon><a href="#"> 0216600247 </a></span>
+            <span layout="row" layout-align="start center" class="iconColor">
+                <ng-md-icon icon="whatsapp" size="30"></ng-md-icon><a href="#"> WhatsApp 03159265669 </a></span>
+        </div>
+        <div flex></div>
+
+        <div layout="row">
+
+            <span layout="row" layout-align="center center" class="iconColor">
+        <ng-md-icon icon="account_box" size="30"></ng-md-icon><a href="#"> Account </a></span>
+
+            <span layout="row" layout-align="center center" class="iconColor">
+        <ng-md-icon icon="login" size="30"></ng-md-icon><a href="#"> Checkout </a></span>
+            <span layout="row" layout-align="center center" class="iconColor">
+                <ng-md-icon icon="supervisor_account" size="30"></ng-md-icon><a href="#"> Login </a></span>
+        </div>
+        <div flex="5"></div>
+    </div>
+</header>
+<!--subheader-->
+<md-subheader layout="row">
+
+    <div layout="row" layout-align="start center">
+        <img src="images/finallogo.jpg" class="subheader" layout="row" layout-align="center center">
+
+
+        <a href="#" class="searchicon">
+            <ng-md-icon icon="search" size="30" class="iconSearch"></ng-md-icon>
+        </a><input layout="row" layout-align="center center" class="input">
+
+        <div flex="5"></div>
+        <input layout="row" layout-align="center center" class="input1"><a href="#" class="searchicon">
+        <ng-md-icon icon="shopping_cart" size="30" class="iconSearch"></ng-md-icon>
+    </a>
+
+    </div>
+
+</md-subheader>
+<div layout="column">
+    <div class="animation widthHeight" layout="row" layout-align="center center"> <!-- Open Animation -->
+        <!-- Insert to your webpage where you want to display the slider -->
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0;" class="widthHeight">
+            <ul class="amazingslider-slides widthHeight" style="display:none;">
+                <li><img src="images/gulab-jamun-hd-wallpaper-4.jpg" class="widthHeight"/></li>
+                <li><img src="images/rasmalai.JPG" class="widthHeight"/></li>
+                <li><img src="images/Ras-Malai_10320.jpg" class="widthHeight"/></li>
+            </ul>
+
+        </div>
+    </div>
+    <!--pics section-->
+
+    <div layout-margin class="mainMargin" layout="column" layout-align="center center">
+        <p layout="row" layout-align="center center" layout-margin layout-padding><span class="ourProducts">Our Products</span></p>
+        <div layout="row">
+        <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding >
+            <img src="images/1.jpg" class="mainWidth" ng-click="showAdvanced($event)">
+        </div>
+        <div  layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+            <img src="images/2.jpg" class="mainWidth">
+        </div>
+        </div>
+        <div layout="row">
+        <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+            <img src="images/3.JPG" class="mainWidth">
+        </div>
+        <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+            <img src="images/4.jpg" class="mainWidth">
+        </div>
+        </div>
+        <div layout="row">
+            <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+                <img src="images/5.JPG" class="mainWidth">
+            </div>
+            <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+                <img src="images/6.jpg" class="mainWidth">
+            </div>
+        </div>
+        <div layout="row">
+            <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+                <img src="images/7.JPG" class="mainWidth">
+            </div>
+            <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+                <img src="images/8.jpg" class="mainWidth">
+            </div>
+        </div>
+    </div>
+    <md-button class="md-primary md-raised" ng-click="showAdvanced($event)" flex="100" flex-gt-md="auto">
+        Custom Dialog
+    </md-button>
+    <div hide-gt-sm layout="row" layout-align="center center" flex="100">
+        <md-checkbox ng-model="customFullscreen" aria-label="Fullscreen Custom Dialog">Custom Dialog Fullscreen</md-checkbox>
+    </div>
+</div>
+</body>
+</html>

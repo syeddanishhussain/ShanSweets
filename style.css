@@ -1,0 +1,112 @@
+.header{
+    background-color: #ffffff;
+}
+/*ng-md-icon{*/
+    /*fill:rgba(29,28,27, 0.65);*/
+/*}*/
+/*ng-md-icon:hover{*/
+
+    /*fill:#F48670;*/
+
+/*}*/
+.iconColor:hover{
+    color: #F48670;
+    fill:  #F48670;;
+
+}
+.float{
+    float: right;
+}
+a{
+    color: rgba(29,28,27, 0.65);
+    text-decoration: none;
+}
+a:hover{
+    color: #F48670;
+
+}
+.subheader{
+    height: 150px;
+    width: 230px;
+    margin-right: 9%;
+    margin-left: 3%;
+
+}
+.ourProducts{
+    font-size: 20px;
+    color: grey;
+}
+.animation
+{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+}
+.searchicon{
+    background-color: #F36D52;
+
+}
+.searchicon:hover{
+    background-color: #F36D52;
+}
+.input{
+    height: 32px;
+    width: 450px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: none;
+}
+.input1{
+    height: 32px;
+    width: 225px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: none;
+    border-left: 1px solid black;
+}
+.iconSearch{
+    fill: white;
+}
+.widthHeight{
+    width: auto !important;
+
+}
+.mainMargin{
+    margin-top: 7%;
+}
+.mainWidth{
+    width: 570px;
+    height: 400px;
+
+}
+.mainWidth:hover{
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    opacity: 0.8
+}
+
+.dialogdemoBasicUsage #popupContainer {
+    position: relative; }
+.dialogdemoBasicUsage .footer {
+    width: 100%;
+    text-align: center;
+    margin-left: 20px; }
+.dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
+    font-size: 0.8em;
+    margin-top: 50px; }
+
+.dialogImg{
+width: 250px;
+    height: 250px;
+}
+.logoImg{
+    width: 50px;
+    height: 50px;
+}
+.logoImg1{
+    width: 50px;
+    height: 50px;
+
+}
