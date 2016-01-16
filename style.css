@@ -1,5 +1,12 @@
+body{
+    overflow: hidden;
+}
 .header{
     background-color: #ffffff;
+}
+.overflow{
+    height: 98vh;
+    overflow: auto;
 }
 /*ng-md-icon{*/
     /*fill:rgba(29,28,27, 0.65);*/

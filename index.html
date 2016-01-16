@@ -44,8 +44,11 @@
         <div flex="5"></div>
     </div>
 </header>
-<!--subheader-->
-<md-subheader layout="row">
+
+<!--main div-->
+<div class="overflow">
+    <!--subheader-->
+    <md-subheader layout="row">
 
     <div layout="row" layout-align="start center">
         <img src="images/finallogo.jpg" class="subheader" layout="row" layout-align="center center">
@@ -63,6 +66,8 @@
     </div>
 
 </md-subheader>
+    <!--slider html-->
+
 <div layout="column">
     <div class="animation widthHeight" layout="row" layout-align="center center"> <!-- Open Animation -->
         <!-- Insert to your webpage where you want to display the slider -->
@@ -75,6 +80,7 @@
 
         </div>
     </div>
+
     <!--pics section-->
 
     <div layout-margin class="mainMargin" layout="column" layout-align="center center">
@@ -118,6 +124,7 @@
     <div hide-gt-sm layout="row" layout-align="center center" flex="100">
         <md-checkbox ng-model="customFullscreen" aria-label="Fullscreen Custom Dialog">Custom Dialog Fullscreen</md-checkbox>
     </div>
+</div>
 </div>
 </body>
 </html>
