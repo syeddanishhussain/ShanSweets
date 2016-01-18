@@ -19,7 +19,7 @@
 
     <script src="applications.js"></script>
 </head>
-<body ng-app="applications" ng-controller="applicationController">
+<body ng-app="applications" ng-controller="applicationController" style="overflow: hidden">
 <header class="header">
     <div layout="row">
         <div flex="5"></div>
@@ -50,76 +50,119 @@
     <!--subheader-->
     <md-subheader layout="row">
 
-    <div layout="row" layout-align="start center">
-        <img src="images/finallogo.jpg" class="subheader" layout="row" layout-align="center center">
+        <div layout="row" layout-align="start center">
+            <img src="images/finallogo.jpg" class="subheader" layout="row" layout-align="center center">
 
 
-        <a href="#" class="searchicon">
-            <ng-md-icon icon="search" size="30" class="iconSearch"></ng-md-icon>
-        </a><input layout="row" layout-align="center center" class="input">
+            <a href="#" class="searchicon">
+                <ng-md-icon icon="search" size="30" class="iconSearch"></ng-md-icon>
+            </a><input layout="row" layout-align="center center" class="input">
 
-        <div flex="5"></div>
-        <input layout="row" layout-align="center center" class="input1"><a href="#" class="searchicon">
-        <ng-md-icon icon="shopping_cart" size="30" class="iconSearch"></ng-md-icon>
-    </a>
+            <div flex="5"></div>
+            <input layout="row" layout-align="center center" class="input1"><a href="#" class="searchicon">
+            <ng-md-icon icon="shopping_cart" size="30" class="iconSearch"></ng-md-icon>
+        </a>
 
-    </div>
+        </div>
 
-</md-subheader>
+    </md-subheader>
     <!--slider html-->
 
-<div layout="column">
-    <div class="animation widthHeight" layout="row" layout-align="center center"> <!-- Open Animation -->
-        <!-- Insert to your webpage where you want to display the slider -->
-        <div id="amazingslider-1" style="display:block;position:relative;margin:0;" class="widthHeight">
-            <ul class="amazingslider-slides widthHeight" style="display:none;">
-                <li><img src="images/gulab-jamun-hd-wallpaper-4.jpg" class="widthHeight"/></li>
-                <li><img src="images/rasmalai.JPG" class="widthHeight"/></li>
-                <li><img src="images/Ras-Malai_10320.jpg" class="widthHeight"/></li>
-            </ul>
+    <div layout="column">
+        <div class="animation widthHeight" layout="row" layout-align="center center"> <!-- Open Animation -->
+            <!-- Insert to your webpage where you want to display the slider -->
+            <div id="amazingslider-1" style="display:block;position:relative;margin:0;" class="widthHeight">
+                <ul class="amazingslider-slides widthHeight" style="display:none;">
+                    <li><img src="images/gulab-jamun-hd-wallpaper-4.jpg" class="widthHeight"/></li>
+                    <li><img src="images/rasmalai.JPG" class="widthHeight"/></li>
+                    <li><img src="images/Ras-Malai_10320.jpg" class="widthHeight"/></li>
+                </ul>
 
+            </div>
         </div>
+
+        <!--pics section-->
+
+        <div layout-margin class="mainMargin" layout="column" layout-align="center center">
+            <p layout="row" layout-align="center center" layout-margin layout-padding><span class="ourProducts">Our Products</span>
+            </p>
+
+            <div layout="row">
+                <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+                    <img src="images/1.jpg" class="mainWidth imgSweets" ng-click="showAdvanced($event)">
+                </div>
+                <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+                    <img src="images/2.jpg" class="mainWidth imgSweets" ng-click="showAdvanced($event)">
+                </div>
+            </div>
+            <div layout="row">
+                <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+                    <img src="images/3.JPG" class="mainWidth imgSweets" ng-click="showAdvanced($event)">
+                </div>
+                <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+                    <img src="images/4.jpg" class="mainWidth imgSweets" ng-click="showAdvanced($event)">
+                </div>
+            </div>
+            <div layout="row">
+                <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+                    <img src="images/5.JPG" class="mainWidth imgSweets" ng-click="showAdvanced($event)">
+                </div>
+                <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+                    <img src="images/6.jpg" class="mainWidth imgSweets" ng-click="showAdvanced($event)">
+                </div>
+            </div>
+            <div layout="row">
+                <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+                    <img src="images/7.JPG" class="mainWidth imgSweets" ng-click="showAdvanced($event)">
+                </div>
+                <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
+                    <img src="images/8.jpg" class="mainWidth imgSweets" ng-click="showAdvanced($event)">
+                </div>
+            </div>
+        </div>
+
     </div>
+    <footer layout="column">
 
-    <!--pics section-->
+        <div layout="column">
+            <div layout="row">
+                <div flex="40">
+                    <p class="fbook">Follow Us On:</p>
+                    <ng-md-icon icon="facebook" class="fbook"></ng-md-icon>
+                    <ng-md-icon icon="twitter" class="fbook"></ng-md-icon>
+                    <ng-md-icon icon="google" class="fbook"></ng-md-icon>
+                </div>
 
-    <div layout-margin class="mainMargin" layout="column" layout-align="center center">
-        <p layout="row" layout-align="center center" layout-margin layout-padding><span class="ourProducts">Our Products</span></p>
-        <div layout="row">
-        <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding >
-            <img src="images/1.jpg" class="mainWidth" ng-click="showAdvanced($event)">
-        </div>
-        <div  layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
-            <img src="images/2.jpg" class="mainWidth">
-        </div>
-        </div>
-        <div layout="row">
-        <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
-            <img src="images/3.JPG" class="mainWidth">
-        </div>
-        <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
-            <img src="images/4.jpg" class="mainWidth">
-        </div>
-        </div>
-        <div layout="row">
-            <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
-                <img src="images/5.JPG" class="mainWidth">
-            </div>
-            <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
-                <img src="images/6.jpg" class="mainWidth">
-            </div>
-        </div>
-        <div layout="row">
-            <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
-                <img src="images/7.JPG" class="mainWidth">
-            </div>
-            <div layout="row" layout-align="center center" class="mainWidth" layout-margin layout-padding>
-                <img src="images/8.jpg" class="mainWidth">
-            </div>
-        </div>
-    </div>
 
-</div>
+
+                    <div flex layout="row" layout-align="start end">
+                        <p class="fbook"><h3>Shan Sweets Inc.</h3></p>
+                    </div>
+
+
+                    <div flex>
+                        <p class="fbook">CONTACT</p>
+
+                        <p class="fbook">Cart PK</p>
+
+                        <p class="fbook">Suite M-38 Mezzanine Floor , Glass Tower</p>
+
+                        <p class="fbook">Clifton Road, near 3 talwar</p>
+
+                        <p class="fbook">Clifton Karachi, Pakistan</p>
+
+                        <p class="fbook">0322 2626714</p>
+
+                        <p class="fbook">021-35640193</p>
+
+                        <p class="fbook">cs@cartpk.com</p>
+
+                        <p class="fbook">Delivery Timings : 9am to 9pm</p>
+                    </div>
+            </div>
+
+        </div>
+    </footer>
 </div>
 </body>
 </html>

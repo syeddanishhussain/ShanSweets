@@ -1,6 +1,3 @@
-body{
-    overflow: hidden;
-}
 .header{
     background-color: #ffffff;
 }
@@ -9,11 +6,11 @@ body{
     overflow: auto;
 }
 /*ng-md-icon{*/
-    /*fill:rgba(29,28,27, 0.65);*/
+/*fill:rgba(29,28,27, 0.65);*/
 /*}*/
 /*ng-md-icon:hover{*/
 
-    /*fill:#F48670;*/
+/*fill:#F48670;*/
 
 /*}*/
 .iconColor:hover{
@@ -105,15 +102,31 @@ a:hover{
     margin-top: 50px; }
 
 .dialogImg{
-width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
 }
 .logoImg{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .logoImg1{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 
+}
+.ingredientsImg{
+    width: 230px;
+    height: 60px;
+}
+.imgSweets {
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.6);
+}
+footer{
+    background-color: #515151;
+    height: 400px;
+}
+.fbook{
+    color: white;
+    fill:white
 }
