@@ -1,9 +1,18 @@
+body{
+    overflow: hidden;
+    background-image: url("images/backgroundimg.jpg");
+}
+
 .header{
-    background-color: #ffffff;
+    background-image: url("images/backgroundimg.jpg");
+}
+.backImg{
+    background-image: url("images/backgroundimg.jpg");
 }
 .overflow{
     height: 98vh;
     overflow: auto;
+
 }
 /*ng-md-icon{*/
 /*fill:rgba(29,28,27, 0.65);*/
@@ -81,14 +90,15 @@ a:hover{
     margin-top: 7%;
 }
 .mainWidth{
-    width: 570px;
-    height: 400px;
+    width: auto;
+    height: auto;
 
 }
+
 .mainWidth:hover{
     transition: all 400ms ease-in-out;
     -webkit-transition: all 400ms ease-in-out;
-    opacity: 0.8
+    opacity: 0.7
 }
 
 .dialogdemoBasicUsage #popupContainer {
@@ -119,8 +129,8 @@ a:hover{
     height: 60px;
 }
 .imgSweets {
-    -webkit-filter: brightness(0.6);
-    filter: brightness(0.6);
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1);
 }
 footer{
     background-color: #515151;
@@ -129,4 +139,8 @@ footer{
 .fbook{
     color: white;
     fill:white
+}
+.fbook1{
+    margin-bottom: -40%;
+    color: white;
 }
