@@ -1,13 +1,13 @@
 body{
     overflow: hidden;
-    background-image: url("images/backgroundimg.jpg");
+
 }
 
 .header{
-    background-image: url("images/backgroundimg.jpg");
+    background-color: #F9F9F9;
 }
 .backImg{
-    background-image: url("images/backgroundimg.jpg");
+    background-image: url("images/back123.jpg");
 }
 .overflow{
     height: 98vh;
@@ -27,27 +27,38 @@ body{
     fill:  #F48670;;
 
 }
+.iconMargin{
+    margin-right: 6%;
+}
 .float{
     float: right;
 }
 a{
-    color: rgba(29,28,27, 0.65);
+    color: #E3337F;
     text-decoration: none;
 }
 a:hover{
-    color: #F48670;
+    color: #E3337F;
 
 }
+.button{
+    background-color: #515151;
+    color: white;
+}
+.marginSlider{
+    margin-top: -3%;
+}
 .subheader{
-    height: 150px;
     width: 230px;
+    height: auto;
     margin-right: 9%;
     margin-left: 3%;
 
 }
 .ourProducts{
-    font-size: 20px;
-    color: grey;
+    font-size: 30px;
+    color: #333333;
+    font-family: LatoWebBold;
 }
 .animation
 {
@@ -57,11 +68,11 @@ a:hover{
     height:auto;
 }
 .searchicon{
-    background-color: #F36D52;
+    background-color: #E7679E;
 
 }
 .searchicon:hover{
-    background-color: #F36D52;
+    background-color: #E3337F;
 }
 .input{
     height: 32px;
@@ -112,8 +123,8 @@ a:hover{
     margin-top: 50px; }
 
 .dialogImg{
-    width: 230px;
-    height: 230px;
+    width: 500px;
+    height: 500px;
 }
 .logoImg{
     width: 40px;
@@ -129,8 +140,8 @@ a:hover{
     height: 60px;
 }
 .imgSweets {
-    -webkit-filter: brightness(1.1);
-    filter: brightness(1.1);
+    -webkit-filter: brightness(0.9);
+    filter: brightness(0.9);
 }
 footer{
     background-color: #515151;
